@@ -1,0 +1,11 @@
+https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up
+
+order of Boot process:
+https://www.lions-wing.net/maker/raspberry-1/boot.html
+
+# 06th February 2019
+Setup Raspberry pi tempreature sensor DS 18b20
+http://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
+
+# Thread Tamil Tutorial ( youtube )
+https://www.youtube.com/watch?v=A_bgTqclJvg
