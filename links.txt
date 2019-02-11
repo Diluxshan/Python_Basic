@@ -1,4 +1,4 @@
-https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up
+0https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up
 
 order of Boot process:
 https://www.lions-wing.net/maker/raspberry-1/boot.html
