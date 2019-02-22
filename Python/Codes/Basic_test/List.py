@@ -9,7 +9,14 @@ print(arr[2:])
 # it should be dont take 4th element.
 print(arr[2:4])
 
-arr.extend(num)
-arr.append('extra adding')
-
+# arr.extend(num)
 print(arr)
+
+arr.append('extra adding')
+print(arr)
+
+arr.insert(2,'Arring insert')
+print(arr)
+
+print(arr.pop())
+print()
