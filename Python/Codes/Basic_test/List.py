@@ -14,9 +14,13 @@ print(arr)
 
 arr.append('extra adding')
 print(arr)
-
 arr.insert(2,'Arring insert')
 print(arr)
 
-print(arr.pop())
-print()
+print('\n')
+
+list = (1,10)
+list[1] = 20
+
+print(list[1])
+
