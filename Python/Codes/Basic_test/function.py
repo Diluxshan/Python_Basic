@@ -1,7 +1,7 @@
 
 def say_Hi():
     print("hello it is Dilux..!")
-
+    print('Just the checking.')
 say_Hi()
 
 class check():

@@ -3,7 +3,7 @@ import multiprocessing
 
 def deposit(balance, lock):
     for i in range(100):
-        time.sleep(1)
+        time.sleep(0.01)
         lock.acquire()
         balance.value = balance.value + 1
         print('count of balance is {}'.format(balance.value))
@@ -11,17 +11,14 @@ def deposit(balance, lock):
 
 def withdraw(balance, lock):
     for i in range(100):
-        time.sleep(1)
-
-
+        time.sleep(0.01)
         lock.acquire()
         balance.value = balance.value - 1
         print('count of balance is decrement {}'.format(balance.value))
         lock.release()
 
-if __name__ == '__main__':
 
-    x=2
+if __name__ == '__main__':
 
     balance = multiprocessing.Value('i', 200)
     lock = multiprocessing.Lock()
