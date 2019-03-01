@@ -17,3 +17,6 @@ print('My name is '+name+ '. Hello '+name+'.')
 
 capital='Sabaragamuwa University'
 print(capital.upper().isupper())
+
+# albha= 'albcdehf'
+# print(albha.isalpha())

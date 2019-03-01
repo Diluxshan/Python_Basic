@@ -1,3 +1,6 @@
+import time
+import datetime
+
 
 #1 Argument pass with parameter.
 def val(d):
@@ -56,3 +59,7 @@ if __name__ == '__main__':
 
     inherit = version2()
     inherit.v2()
+
+    print('\\n')
+    time = str(datetime.datetime.today())
+    print(time)
