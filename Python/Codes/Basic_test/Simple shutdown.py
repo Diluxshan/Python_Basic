@@ -1,5 +1,6 @@
 import os;
 import tempfile
+import g
 
 print("1. Shutdown Computerputer");
 print("2. Restart Computer");
