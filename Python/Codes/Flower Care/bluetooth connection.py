@@ -14,3 +14,4 @@ def do_something(sc):
 
 s.enter(5, 5, do_something, (s,))
 s.run()
+d.
