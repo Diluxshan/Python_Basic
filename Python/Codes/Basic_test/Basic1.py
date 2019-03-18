@@ -45,6 +45,7 @@ class version2(version1):
 class version3(version2):
     def v3(self):
         print('\n4. This is Version 3..-NonStatic(inheritance)')
+        print("")
 #============================================
 
 
