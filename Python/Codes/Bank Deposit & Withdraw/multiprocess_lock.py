@@ -1,6 +1,7 @@
 import time
 import datetime
 import multiprocessing
+import calendar
 
 def deposit(balance, lock):
     for i in range(100):
@@ -23,6 +24,9 @@ if __name__ == '__main__':
 
     tim = time.time()
     today=datetime.date.today()
+
+    # cal=calendar.month(2019,3)
+    # print(cal)
 
     balance = multiprocessing.Value('i', 200)
     lock = multiprocessing.Lock()
