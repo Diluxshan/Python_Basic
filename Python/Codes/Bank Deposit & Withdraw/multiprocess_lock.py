@@ -1,4 +1,5 @@
 import time
+import datetime
 import multiprocessing
 
 def deposit(balance, lock):
@@ -20,6 +21,9 @@ def withdraw(balance, lock):
 
 if __name__ == '__main__':
 
+    tim = time.time()
+    today=datetime.date.today()
+
     balance = multiprocessing.Value('i', 200)
     lock = multiprocessing.Lock()
     d = multiprocessing.Process(target=deposit,args=(balance,lock))
@@ -29,3 +33,5 @@ if __name__ == '__main__':
     d.join()
     w.join()
     print(balance.value)
+    print("The full time is :" + str(time.time()-tim )+"seconds")
+    print(today.month)
