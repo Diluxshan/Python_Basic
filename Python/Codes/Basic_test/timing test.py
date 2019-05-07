@@ -10,11 +10,21 @@
 #
 # delay()
 
+#
+#
+# import time
+# start_time = time.time()
+# # Your code here
+# time.sleep(5)
+# print(time.time() - start_time, "seconds")
 
 
 import time
-start_time = time.time()
-# Your code here
-time.sleep(5)
-print(time.time() - start_time, "seconds")
 
+timeout = time.time() + 10  # 5 minutes from now
+for i in range(15):
+    print("hello/....")
+    time.sleep(1)
+
+    if time.time() > timeout:
+        break

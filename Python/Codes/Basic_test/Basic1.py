@@ -46,10 +46,14 @@ class version3(version2):
     def v3(self):
         print('\n4. This is Version 3..-NonStatic(inheritance)')
         print("")
+
+    def timing(self):
+        for x in range(20):
+            print("helo worls...!")
+            # time.sleep(1)
+
+
 #============================================
-
-
-
 if __name__ == '__main__':
     obj=clas()
     obj.fun()
@@ -64,3 +68,6 @@ if __name__ == '__main__':
     print('\\n')
     time = str(datetime.datetime.today())
     print(time)
+
+    cls3=version3()
+    cls3.timing()

@@ -5,19 +5,23 @@ import calendar
 
 def deposit(balance, lock):
     for i in range(100):
-        time.sleep(0.01)
+        time.sleep(1)
         lock.acquire()
         balance.value = balance.value + 1
         print('count of balance is {}'.format(balance.value))
         lock.release()
 
 def withdraw(balance, lock):
+    timeout=time.time()+10
+
     for i in range(100):
-        time.sleep(0.01)
+        time.sleep(1)
         lock.acquire()
         balance.value = balance.value - 1
         print('count of balance is decrement {}'.format(balance.value))
         lock.release()
+        if time.time() > timeout:
+            break
 
 
 if __name__ == '__main__':
