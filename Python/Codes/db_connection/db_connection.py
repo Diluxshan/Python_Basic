@@ -7,28 +7,31 @@ import mysql
 
 def db_con():
     connection = mysql.connector.connect(host="localhost", database="dilux2", user="user2", passwd="dilux123")
-    cursor = connection.cursor()
 
-    cursor.execute("select*from detail ")
-    result = cursor.fetchall()
-    rows = int(cursor.rowcount)
+    try:
+        cursor = connection.cursor()
+        cursor.execute("select*from detail ")
 
-    #result2 = cursor.fetchone()
-    #result3 = cursor.fetchmany(5)
+        result = cursor.fetchall()
+        rows = int(cursor.rowcount)
 
-    print(result)
-    print(rows)
+        cursor.close()
+        connection.close()
 
-    if result !=0 :
-        print("The data was successfully Read")
+        print(result)
+        print(rows)
 
-    else:
-        print("There are no any Rows added....!")
+        if result != 0:
+            print("The data was successfully Read")
+
+        else:
+            print("There are no any Rows added....!")
 
 
-db_con()
+    except:
+        print("This is not the actual value.")
 
-#
-# if __name__ == '__main__':
-#     while True:
-#         db_con()
+if __name__ == '__main__':
+    db_con()
+
+    print(datetime.date.today())
