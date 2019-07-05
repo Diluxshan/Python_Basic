@@ -1,10 +1,13 @@
+
+import csv
+import datetime
 import requests
 
+with open('person.csv','rb') as f:
+    r = requests.post('http://httpbin.org/post', data={'person.csv':f})
 
-resp = requests.get("https://www.senzmate.com")
+if r.status_code==200:
+    print(r.text)
 
-
-if resp.status_code == 200:
-    print(resp.text)
-
-
+else:
+    print("Something Wrong..!")
