@@ -1,20 +1,14 @@
 import requests
 
-payload = {'username':'Diluxshan', 'password':'dilux123'}
-val = requests.post("https://httpbin.org/post", data=payload)
+payload = {'name':'Diluxshan', 'job':'Internship'}
+val = requests.post("https://reqres.in/api/users", json=payload)
 
 print(val.status_code)
 print(val.text)
 
-print("===========================================================")
-
-val2 = val.json()
-print(val2['form'])
-
-
-# if resp.status_code == 200:
-#     print(resp)
-
+#print("===========================================================")
+#val2 = val.json()
+#print(val2['form'])
 
 
 

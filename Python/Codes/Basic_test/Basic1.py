@@ -52,7 +52,10 @@ class version3(version2):
             print("helo worls...!")
             # time.sleep(1)
 
+def new():
+    print("hello..!")
 
+new()
 #============================================
 if __name__ == '__main__':
     obj=clas()
