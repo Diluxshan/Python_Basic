@@ -16,5 +16,5 @@ sync_to_cloud = {
 result = fbcon.post('/MyTestData', sync_to_cloud)
 print(result)
 
-result2 = fbcon.get('/MyTestData', None)
+result2 = fbcon.get('/MyTestData/', None)
 print(result2)
