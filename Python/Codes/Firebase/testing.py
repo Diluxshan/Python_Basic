@@ -16,7 +16,6 @@ fbcon = firebase.FirebaseApplication('https://pythontesting-45003.firebaseio.com
 # result = fbcon.post('/MyTestData3', sync_to_cloud)
 # print(result)
 
-
 result1 = fbcon.get('/MyTestData/', None)
 print(result1)
 
