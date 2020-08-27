@@ -20,6 +20,7 @@ result1 = fbcon.get('/MyTestData/', None)
 print(result1)
 
 print("\n")
+print("it is a testing")
 
 result2 = fbcon.get('/MyTestData2/', None)
 print(result2)
